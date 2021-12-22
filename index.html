@@ -15,20 +15,26 @@
         <fieldset>
             <legend> Dados Pessoais </legend>
             <div>
-                <label for="nomecompleto">Nome completo</label>
+                <label for="nomecompleto">Nome completo</label><br>
                 <input type="text" id="nome" value="Nome completo" minlength="4"/>
             </div>
             <div>
                 <label for="dn">Data de nascimento</label>
                 <input type="date" id="dn"/>
                 <label for="estcivil">Estado civil</label>
-                <input type="text" id="estcivil" value="Estado civil"/>
+                <select name="estcivil" id="estcivil">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="sasado">Casado</option>
+                    <option value="viuvo">Viúvo/ Bacharelado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="uniao-estavel">União Estável</option>
+                </select>
             </div>
             <div>
                 <label for="nacionalidade">Nacionalidade</label>
-                <input type="text" id="pais" value="Nacionalidade"/>
+                <input type="text" id="pais"/>
                 <label for="naturalidade"> Naturalidade</label>
-                <input type="text" id="cidade" value="Natural de"/>
+                <input type="text" id="cidade"/>
             </div>
             <div>
                 <label class="filhos" for="filhos">Tem filhos?</label>
@@ -40,8 +46,8 @@
                 <input type="text" id="qt-filhos"/>
             </div>
             <div>
-                <label for="endereco">Endereço (Rua, Av, Travessa...)</label>
-                <input type="text" name="endereco" id="endereco"><br>
+                <label for="endereco">Endereço (Rua, Av, Travessa...)</label><br>
+                <input type="text" name="endereco" id="endereco">
                 <label for="endereco-nr">Número</label>
                 <input type="number" id="endereco-nr">
                 <label for="casa">Complemento</label>
@@ -87,24 +93,21 @@
                         <option selected value="PR">Paraná</option>
                         <option value="RS">Rio Grande do Sul</option>
                         <option value="SC">Santa Catarina</option>
-                    </optgroup>            
-        </fieldset> 
-    
-        <fieldset>
-            <legend>Formação e dados profissionais</legend>
-                <div>
-                    <select name="escolar" id="escolaridade">
-                        <option value="ensfundamental">Ensino Fundamental</option>
-                        <option value="ensmedio">Ensino Médio</option>
-                        <option value="graduacao">Graduação/ Bacharelado</option>
-                        <option value="posgraduacao">Pós Graduação</option>
-                        <option value="mestrado">Mestrado</option>
-                        <option value="Doutorado">Doutorado</option>
-                    </select>
-                </div>
-        </fieldset>
+                    </optgroup>     
+                </select>     
+                <label for="formacao">Formação</label>
+                
+                <select name="escolar" id="escolaridade">
+                    <option value="ensfundamental">Ensino Fundamental</option>
+                    <option value="ensmedio">Ensino Médio</option>
+                    <option value="graduacao">Graduação/ Bacharelado</option>
+                    <option value="posgraduacao">Pós Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="Doutorado">Doutorado</option>
+                </select>
 
-        <input class="button" type="submit" value="Cadastrar">
+                <P><input class="button" type="submit" value="Cadastrar"></P>
+        </fieldset>        
 
     </form>
 </body>

@@ -5,14 +5,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 form {
     max-width: 700px;
     margin: 0 auto;
+    font-size: 14px;
 }
 
-legend {
+legend, h3 {
     font-weight: bold;
     font-size: 1.2em;
     padding: 10px;
@@ -20,23 +22,24 @@ legend {
 }
 
 input {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #nome, #endereco {
     width: 400px;
 }
 
-#cEst, label, input {    
-    margin: 5px 0px;
+ label, input,#cEst, #cEst, #estcivil, #escolaridade {    
+    margin: 5px 5px;
     padding: 5px;
     border-radius: 5px;
     border-color: rgba(0, 0, 0, 0.174);
     border-width: 0.1px;
 }
 
-button {
+.button {
     font-weight: bold;
+    background-color: aliceblue;
 }
 
 fieldset {
