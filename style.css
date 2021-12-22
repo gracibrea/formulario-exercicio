@@ -8,7 +8,7 @@
 }
 
 form {
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -19,8 +19,12 @@ legend {
     margin-left: 10px;
 }
 
+input {
+    font-size: 14px;
+}
+
 #nome, #endereco {
-    width: 500px;
+    width: 400px;
 }
 
 #cEst, label, input {    
@@ -32,7 +36,7 @@ legend {
 }
 
 button {
-    bu
+    font-weight: bold;
 }
 
 fieldset {
